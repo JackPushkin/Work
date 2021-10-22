@@ -10,13 +10,13 @@ int main()
     printf("Please enter N: ");
     scanf("%lld", &N);
 
-    for(i = 1; ; ++i)
+    for(i = 1; N >= 10 ; ++i)
     {
         N/=10;
-        if(N<1)
-        {
-            break;
-        }
+//        if(N<1)
+//        {
+//            break;
+//        }
     }
 
     printf("The number N contains %d digits", i);
