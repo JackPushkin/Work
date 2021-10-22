@@ -11,8 +11,9 @@ int main()
     // Создаем массивы
 
     const int SIZE = 30;
+    const int SIZE_2 = 15;
     int array[SIZE];
-    int array2[SIZE/2];
+    int array2[SIZE_2];
 
     for(int i = 0; i < SIZE; ++i) // Заполняем массив случайными числами
     {
@@ -27,7 +28,7 @@ int main()
 
     printf("\n");
 
-    for(int i = 0; i < SIZE/2; ++i) // Вывод второго массива
+    for(int i = 0; i < SIZE_2; ++i) // Вывод второго массива
     {
         printf("%d ", array2[i]);
     }
@@ -39,13 +40,13 @@ int main()
     int j;
     for(int i = 0; i < SIZE; ++i)
     {
-        for(j = 0; j < SIZE/2; ++j)
+        for(j = 0; j < SIZE_2; ++j)
         {
             if(array[i]==array2[j])
             {
                 break;
             }
-            if(j == SIZE/2 - 1)
+            if(j == SIZE_2 - 1)
             {
                 printf("%d ", i);
             }
